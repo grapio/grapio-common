@@ -12,7 +12,6 @@
         <Copyright>Copyright (c) 2023 grapio</Copyright>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageProjectUrl>https://github.com/grapio</PackageProjectUrl>
-        <PackageLicenseUrl>https://github.com/grapio/grapio-common/blob/main/LICENSE</PackageLicenseUrl>
         <PackageIcon>grapio-padded.png</PackageIcon>
         <RepositoryUrl>https://github.com/grapio/grapio-common</RepositoryUrl>
         <RepositoryType>git</RepositoryType>

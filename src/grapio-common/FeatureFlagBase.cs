@@ -21,6 +21,8 @@ public abstract class FeatureFlagBase<T>
     /// </summary>
     protected FeatureFlagBase()
     {
+        FlagKey = string.Empty;
+        Value = default(T)!;
     }
     
     /// <summary>
