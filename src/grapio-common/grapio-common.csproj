@@ -5,7 +5,6 @@
         <PackageVersion>1.0.0</PackageVersion>
         <RootNamespace>grapio_common</RootNamespace>
         <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
         <Title>grapio-common</Title>
         <Authors>Sydney du Plooy</Authors>
         <Description>Common data structures for grapio.</Description>
