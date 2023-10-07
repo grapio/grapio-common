@@ -21,7 +21,7 @@ jobs:
       with:
         dotnet-version: ${{ matrix.dotnet-version }}
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore src/grapio-common.sln
     - name: Build
       run: dotnet build --no-restore
     - name: Test
