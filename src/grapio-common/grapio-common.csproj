@@ -21,10 +21,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <None Update="grapio-padded.png">
-        <Pack>True</Pack>
-        <PackagePath></PackagePath>
-      </None>
+      <None Include="grapio-padded.png" Visible="false" Pack="true" PackagePath="\"/>
     </ItemGroup>
-
 </Project>
