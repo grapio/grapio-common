@@ -1,7 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net7.0</TargetFramework>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <PackageVersion>1.0.0</PackageVersion>
         <RootNamespace>grapio_common</RootNamespace>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
@@ -9,6 +10,7 @@
         <Authors>Sydney du Plooy</Authors>
         <Description>Common data structures for grapio.</Description>
         <Copyright>Copyright (c) 2023 grapio</Copyright>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageProjectUrl>https://github.com/grapio</PackageProjectUrl>
         <PackageLicenseUrl>https://github.com/grapio/grapio-common/blob/main/LICENSE</PackageLicenseUrl>
         <PackageIcon>grapio-padded.png</PackageIcon>
