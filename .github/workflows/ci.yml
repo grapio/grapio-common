@@ -40,6 +40,8 @@ jobs:
       with:
         dotnet-version: ${{ matrix.dotnet-version }}
         source-url: https://api.nuget.org/v3/index.json
+      env:
+        NUGET_AUTH_TOKEN: ${{ secrets.NUGET }}
     - run: dotnet build --configuration Release src/grapio-common/grapio-common.csproj
     - name: Create the package
       run: dotnet pack --configuration Release src/grapio-common/grapio-common.csproj
