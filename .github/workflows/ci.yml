@@ -44,4 +44,4 @@ jobs:
     - name: Create the package
       run: dotnet pack --configuration Release src/grapio-common/grapio-common.csproj
     - name: Publish the package to GPR
-      run: dotnet nuget push src/grapio-common/bin/Release/*.nupkg --api-key ${{ secrets.NUGET }}
+      run: dotnet nuget push src/grapio-common/bin/Release/grapio-common.nupkg --api-key ${{ secrets.NUGET }}
