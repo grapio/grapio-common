@@ -16,7 +16,7 @@
         <PackageIcon>grapio-padded.png</PackageIcon>
         <RepositoryUrl>https://github.com/grapio/grapio-common</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
-        <LangVersion>12</LangVersion>
+        <LangVersion>10</LangVersion>
         <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
         <FileVersion>1.0.0</FileVersion>
     </PropertyGroup>
