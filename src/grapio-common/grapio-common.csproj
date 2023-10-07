@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
+        <AssemblyVersion>1.0.0</AssemblyVersion>
         <PackageVersion>1.0.0</PackageVersion>
         <RootNamespace>grapio_common</RootNamespace>
         <ImplicitUsings>enable</ImplicitUsings>
@@ -16,7 +16,9 @@
         <PackageIcon>grapio-padded.png</PackageIcon>
         <RepositoryUrl>https://github.com/grapio/grapio-common</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
-        <LangVersion>10</LangVersion>
+        <LangVersion>12</LangVersion>
+        <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+        <FileVersion>1.0.0</FileVersion>
     </PropertyGroup>
 
     <ItemGroup>
