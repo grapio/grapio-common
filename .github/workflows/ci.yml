@@ -41,7 +41,7 @@ jobs:
       env:
         TAG: ${{ github.ref_name }}
       run: echo "VERSION=${TAG#v}" >> $GITHUB_ENV
-    - run: dotnet build --configuration Release src/grapio-common/grapio-common.csproj /p:Version=$VERSION /p:NuGetVersion=$VERSION
+    - run: dotnet build --configuration Release src/grapio-common/grapio-common.csproj /p:Version=$VERSION /p:NuGetVersion=$VERSION /p:AssemblyVersion=$VERSION
     - name: Create the package
       run: dotnet pack --configuration Release src/grapio-common/grapio-common.csproj /p:PackageVersion=$VERSION
     - name: Publish the package to GPR
