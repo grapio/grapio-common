@@ -1,13 +1,14 @@
 name: grapio-common
 
 on:
-  workflow_dispatch:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
   release:
     types: [created]
+
+on: workflow_dispatch
 
 jobs:
   build:
