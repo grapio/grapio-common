@@ -40,10 +40,8 @@ jobs:
       with:
         dotnet-version: ${{ matrix.dotnet-version }}
         source-url: https://nuget.pkg.github.com/grapio/index.json
-      env:
-        NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
     - run: dotnet build --configuration Release src/grapio-common/grapio-common.csproj
     - name: Create the package
       run: dotnet pack --configuration Release src/grapio-common/grapio-common.csproj
     - name: Publish the package to GPR
-      run: dotnet nuget push src/grapio-common/bin/Release/*.nupkg
+      run: dotnet nuget push src/grapio-common/bin/Release/*.nupkg --api-key ${{secrets.GITHUB_TOKEN}}
