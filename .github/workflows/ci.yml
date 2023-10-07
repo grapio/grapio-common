@@ -64,5 +64,5 @@ jobs:
     - name: Create the package
       run: dotnet pack --configuration Release src/grapio-common/grapio-common.csproj -p:PackageVersion=$VERSION
     - name: Publish the package to NuGet
-      run: dotnet nuget push src/grapio-common/bin/Release/grapio-common.1.0.0.nupkg --api-key ${{ secrets.NUGET }}
+      run: dotnet nuget push src/grapio-common/bin/Release/grapio-common.$VERSION.nupkg --api-key ${{ secrets.NUGET }}
         
