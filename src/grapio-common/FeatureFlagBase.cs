@@ -1,4 +1,6 @@
-﻿namespace grapio_common;
+﻿using LiteDB;
+
+namespace grapio_common;
 
 /// <summary>
 /// Represents a generic feature flag of type <code>T</code>.
@@ -6,6 +8,9 @@
 /// <typeparam name="T">Type of the feature flag value</typeparam>
 public abstract class FeatureFlagBase<T>
 {
+    [BsonId]
+    public ObjectId Id { get; set; }
+    
     /// <summary>
     /// The unique identifier for this feature flag.
     /// </summary>
@@ -21,8 +26,9 @@ public abstract class FeatureFlagBase<T>
     /// </summary>
     protected FeatureFlagBase()
     {
+        Id = default!;
         FlagKey = string.Empty;
-        Value = default(T)!;
+        Value = default!;
     }
     
     /// <summary>
